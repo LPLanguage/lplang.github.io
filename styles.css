@@ -1,0 +1,406 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стили для header */
+.header-content {
+    background-color: #000; /* Тёмно-серый цвет */
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 78px;
+    color: #fff; /* Возвращаем заголовку белый цвет */
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.header-content a {
+    background-color: #fff;
+    color: #e91e63; /* Розоватый цвет */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.header-content a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Стили для меню */
+.menu {
+    background-color: #000;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: center; /* Выравниваем элементы по центру по горизонтали */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Убираем правый отступ у последнего элемента */
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #800e47;
+}
+
+.menu_lol {
+    background-color: #f7f7f7;
+    display: inline-block;
+    margin-right: 20px;
+    color: #000;
+}
+
+.menu_lol li:last-child {
+    margin-right: 0;
+}
+
+.menu_lol li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu_lol li a:hover {
+    text-decoration: underline;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для .row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+}
+
+.small-widget {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: ##000;
+    margin-bottom: 15px;
+}
+
+.widget-title .icon-get-started,
+.widget-title .icon-download,
+.widget-title .icon-documentation,
+.widget-title .icon-jobs {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-color: #b91668;
+    border-radius: 50%;
+}
+
+.small-widget p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.small-widget a {
+    color: #b91668;
+    text-decoration: none;
+}
+
+.small-widget a:hover {
+    text-decoration: underline;
+}
+
+.list-widgets.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-widgets .medium-widget {
+    flex: 0 0 70%; /* Задаем блоку ширину 70% от доступной ширины */
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-widgets .shrubbery {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.list-widgets h2.widget-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: ##000;
+    margin-bottom: 15px;
+}
+
+.list-widgets p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.list-widgets a {
+    color: #306998;
+    text-decoration: none;
+}
+
+.list-widgets a:hover {
+    text-decoration: underline;
+}
+
+.list-widgets .give-me-more {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list-widgets .give-me-more a {
+    display: inline-block;
+    background-color: #306998;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.list-widgets .give-me-more a:hover {
+    background-color: #205480;
+}
+
+/* Стили для .site-base */
+.site-base {
+    background-color: #306998;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.site-base .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+/* Тёмно-серый цвет */
+:root {
+  --main-bg-color: #202020;
+}
+
+/* Розоватый цвет */
+:root {
+  --main-pink-color: #E52785;
+}
+
+/* Заголовок общего стиля */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
+}
+
+/* Стили для header */
+.header-content {
+  background-color: var(--main-pink-color);
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* Остальные стили остаются неизменными */
+/* Стили для header */
+header {
+    background-color: #E52785;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Стили для footer */
+  footer {
+    background-color: #E52785;
+    color: #fff;
+    text-align: center;
+  }
+  .menu{
+    background-color: #b91668;
+  }
+  /* Стили для footer */
+footer {
+    background-color: #E52785;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    background-color: #b91668;
+    padding: 20px;
+  }
+/* Стили для footer */
+footer {
+    background-color: #b91668;
+    color: #fff;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    padding: 20px;
+  
+  }
+.site-base{
+    background-color: #b91668;
+}    
+  h2{
+    color: #000;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+}
+
+/* Стили для меню документации */
+.documentation-menu {
+    background-color: #202020;
+    color: #fff;
+    padding: 20px;
+}
+
+.documentation-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.documentation-menu li {
+    margin: 10px 0;
+}
+
+.documentation-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.documentation-menu a:hover {
+    text-decoration: underline;
+}
+/* Стили для <main> */
+main {
+    background-color: #f0f0f0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Стили для заголовков (h2) */
+main h2 {
+    font-size: 24px;
+    color: #b91668;
+    margin-top: 20px;
+}
+
+/* Стили для кода (pre и code) */
+main pre {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+    line-height: 1.4;
+}
+
+main code {
+    font-family: Consolas, Monaco, monospace;
+}
+
+/* Стили для абзацев (p) */
+main p {
+    line-height: 1.6;
+}
+
+/* Стили для ссылок */
+main a {
+    color: #b91668;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+.documentation-menu {
+    background-color: #b91668;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.documentation-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.documentation-menu a:hover {
+    background-color: #9e175a;
+}

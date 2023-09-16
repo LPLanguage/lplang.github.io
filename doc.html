@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="menu" role="tree">
+        <li class="python-meta ">
+        <a href="" title="The LPL Home">home</a>
+        </li>
+        <li class="docs-meta ">
+        <a href="" title="Documentation">Docs</a>
+        </li>
+        <li class="jobs-meta ">
+        <a href="" title="Download">Download</a>
+        </li>
+        <li class="shop-meta ">
+        <a href="https://discord.gg/7XXU7kfgJj" title="Discord">Community</a>
+        </li>
+        </ul>
+        </nav>
+</header>
+
+<main>
+<nav class="documentation-menu">
+<ul>
+<li><a href="#lpl-1-functions">LPL 1.0 functions</a></li>
+<li><a href="#lpl-2-functions">LPL 2.0 functions</a></li>
+</ul>
+</nav>
+
+<!-- LPL 1.0 Documentation -->
+<section id="lpl-1-functions">
+<h1>LPL 1.0 features</h1>
+
+<!-- print function -->
+<h2>print(text)</h2>
+<p>The <code>print()</code> function is used to print text to the console.</p>
+
+<!-- Example of using print -->
+<h3>Example:</h3>
+<pre><code>print("Hello, World!");</code></pre>
+<p>This code will output the text "Hello, World!" to the console.</p>
+
+<!-- var function -->
+<h2>var</h2>
+<p>The <code>var</code> keyword is used to declare variables.</p>
+
+<!-- Example of using var -->
+<h3>Example:</h3>
+<pre><code>var a;</code></pre>
+<p>Declares the variable <code>a</code>.</p>
+
+
+
+<!-- const function -->
+<h2>const</h2>
+<p>The <code>const</code> keyword is used to create constant variables.</p>
+
+<!-- Example of using const -->
+<h3>Example:</h3>
+<pre><code>const PI = 3.14159;</code></pre>
+<p>Creates a <code>PI</code> constant with the value 3.14159.</p>
+
+<!-- err function -->
+<h2>err(message)</h2>
+<p>The <code>err()</code> function is used to display an error message.</p>
+
+<!-- Example of using err -->
+<h3>Example:</h3>
+<pre><code>err("This is an error message.");</code></pre>
+<p>This code will display an error message.</p>
+
+<!-- if/else function -->
+<h2>if/else</h2>
+<p>The <code>if/else</code> construct is used to conditionally execute code.</p>
+
+<!-- Example of using if/else -->
+<h3>Example:</h3>
+<pre><code>if (condition) {
+// Code that is executed if the condition is true
+} else {
+// Code that is executed if the condition is false
+}</code></pre>
+<p>This code executes different code depending on the condition.</p>
+
+<!-- while function -->
+<h2>while</h2>
+<p>The <code>while</code> loop is used to execute code while the condition is true.</p>
+
+<!-- Example of using while -->
+<h3>Example:</h3>
+<pre><code>while (condition) {
+// Code that runs while the condition is true
+}</code></pre>
+<p>This code executes the code inside the loop as long as the condition is true.</p>
+
+<!-- do while function -->
+<h2>do while</h2>
+<p>The <code>do while</code> loop is used to execute code while the condition is true, and checks the condition after each iteration.</p>
+
+<!-- Example of using do while -->
+<h3>Example:</h3>
+<pre><code>do {
+// Code that runs while the condition is true
+} while (condition);</code></pre>
+<p>This code will execute the code inside the loop at least once, even if the condition is false.</p>
+
+<!-- alr function -->
+<h2>alr(text)</h2>
+<p>The <code>alr()</code> function is used to display a pop-up message.</p>
+
+<!-- Example of using alr -->
+<h3>Example:</h3>
+<pre><code>alr("This is an alert message.");</code></pre>
+<p>This code will display a popup message.</p>
+
+<!-- conf function -->
+<h2>conf(text)</h2>
+<p>The <code>conf()</code> function is used to display a confirmation popup window.</p>
+
+<!-- Example of using conf -->
+<h3>Example:</h3>
+<pre><code>conf("Are you sure?");</code></pre>
+<p>This code will display a pop-up window with a question.</p>
+
+<!-- function prom -->
+<h2>prom(text)</h2>
+<p>The <code>prom()</code> function is used to display a pop-up window asking for data input.</p>
+
+<!-- Example of using prom -->
+<h3>Example:</h3>
+<pre><code>var name = prom("Enter your name:");</code></pre>
+<p>This code will display a window asking for a name and store the entered value in the <code>name</code> variable.</p>
+
+<!-- clear function -->
+<h2>clear</h2>
+<p>The <code>clear</code> function is used to clear the console (not supported in all browsers).</p>
+
+<!-- Example of using clear -->
+<h3>Example:</h3>
+<pre><code>clear;</code></pre>
+<p>This code will clear the console.</p>
+
+<!-- random function -->
+<h2>random(min, max)</h2>
+<p>The <code>random()</code> function is used to generate a random number within a given range.</p>
+
+<!-- Example of using random -->
+<h3>Example:</h3>
+<pre><code>var randomNumber = random(1, 100);</code></pre>
+<p>This code will generate a random number between 1 and 100 and store it in the <code>randomNumber</code> variable.</p>
+</section>
+
+<!-- LPL 2.0 Documentation -->
+<section id="lpl-2-functions">
+<h1>LPL 2.0 features</h1>
+
+<!-- translate() function -->
+<h2>translate()</h2>
+<p>The <code>translate()</code> function translates code from LPL to JavaScript.</p>
+
+<!-- zone object -->
+<h2>zone</h2>
+<p>The <code>zone</code> object represents a document object and provides a number of methods for working with elements.</p>
+
+<!-- Function zone.qrSelect() -->
+<h2>zone.qrSelect(selector, [context])</h2>
+<p>The <code>zone.qrSelect()</code> method selects the element(s) with the specified selector.</p>
+
+<!-- Function zone.CreateElem() -->
+<h2>zone.CreateElem(tagName)</h2>
+<p>The <code>zone.CreateElem()</code> method creates a new HTML element with the specified tag.</p>
+
+<!-- AddChild() function -->
+<h2>AddChild(parent, child)</h2>
+<p>The <code>AddChild()</code> function adds a child element to a parent element.</p>
+
+<!-- Function remChild() -->
+<h2>remChild(parent, child)</h2>
+<p>The <code>remChild()</code> function removes a child element from a parent element.</p>
+
+<!-- Function zone.addEvList() -->
+<h2>zone.addEvList(element, eventName, handler)</h2>
+<p>The <code>zone.addEvList()</code> method adds an event handler to the element.</p>
+
+<!-- Function zone.RemEvList() -->
+<h2>zone.RemEvList(element, eventName, handler)</h2>
+<p>The <code>zone.RemEvList()</code> method removes an event handler from an element.</p>
+
+<h2>Creating classes</h2>
+<p>In LPL 2.0, you can create your own classes to organize code and work with objects.</p>
+<p>To create a class, use the keyword <code>class</code> followed by the name of your class. Next, define a class constructor that will be called when a new object of this class is created. In the constructor you can initialize the properties of the object.</p>
+<p>Example:</p>
+<pre><code class="code">class Person {
+constructor(name, age) {
+this.name = name;
+this.age = age;
+}
+
+introduce() {
+print("Hi, my name is " + this.name + " and I'm " + this.age + " years old.");
+}
+}
+
+var person1 = new Person("Alex", 25);
+person1.introduce(); // Outputs: Hi, my name is Alex and I'm 25 years old.
+</code></pre>
+<p>In the example above, the <code>Person</code> class has a constructor that takes a name and age, and a <code>introduce()</code> method that outputs information about the person.</p>
+<!-- Methods on elements -->
+<h2>Methods on elements</h2>
+<p>The following methods are available for working with elements:</p>
+
+<!-- Methods on elements - accessKey -->
+<h3>accessKey</h3>
+<p>The <code>accessKey</code> method is used to get or set the access key for an element.</p>
+
+<!-- Methods on elements - align -->
+<h3>align</h3>
+<p>The <code>align</code> method is used to get or set the horizontal alignment of an element.</p>
+
+<!-- Methods on elements - alt -->
+<h3>alt</h3>
+<p>The <code>alt</code> method is used to get or set alternative text for an element, such as an image.</p>
+
+<!-- Methods on elements - attributes -->
+<h3>attributes</h3>
+<p>The <code>attributes</code> method returns a collection of element attributes.</p>
+
+<!-- Methods on elements - autoCompl -->
+<h3>autoCompl</h3>
+<p>The <code>autoCompl</code> method is used to get or set the autocomplete state for a form element.</p>
+
+<!-- Methods on elements - autofocus -->
+<h3>autofocus</h3>
+<p>The <code>autofocus</code> method is used to get or set the autofocus state of an element.</p>
+
+<!-- Methods on elements - baseURI -->
+<h3>baseURI</h3>
+<p>The <code>baseURI</code> method returns the base URI of an element.</p>
+
+<!-- Methods on elements - childElCount -->
+<h3>childElCount</h3>
+<p>The <code>childElCount</code> method returns the number of immediate child elements.</p>
+
+<!-- Methods on elements - childNodes -->
+<h3>childNodes</h3>
+<p>The <code>childNodes</code> method returns a collection of all child elements.</p>
+
+<!-- Methods on elements - children -->
+<h3>children</h3>
+<p>The <code>children</code> method returns a collection of all child element elements.</p>
+
+<!-- Methods on elements - classList -->
+<h3>classList</h3>
+<p>The <code>classList</code> method returns a DOMTokenList object representing the classes of the element.</p>
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<!-- Methods on elements - className -->
+<h3>className</h3>
+<p>The <code>className</code> method is used to get or set the value of the class attribute of an element.</p>
+
+<!-- Methods on elements - clientHeight -->
+<h3>clientHeight</h3>
+<p>The <code>clientHeight</code> method returns the height of the element's contents, including borders, but not scrolling or margins.</p>
+
+<!-- Methods on elements - clientLeft -->
+<h3>clientLeft</h3>
+<p>The <code>clientLeft</code> method returns the width of the element's left border.</p>
+
+<!-- Methods on elements - clientTop -->
+<h3>clientTop</h3>
+<p>The <code>clientTop</code> method returns the height of the element's top border.</p>
+
+<!-- Methods on elements - clientWidth -->
+<h3>clientWidth</h3>
+<p>The <code>clientWidth</code> method returns the width of the element's contents, including borders, but not scrolling or margins.</p>
+
+<!-- Methods on elements - edit -->
+<h3>edit</h3>
+<p>The <code>edit</code> method is used to get or set the edit state of an element's content.</p>
+
+<!-- Methods on elements - dataset -->
+<h3>dataset</h3>
+<p>The <code>dataset</code> method returns a DOMStringMap object representing the element's custom data attributes.</p>
+
+<!-- Methods on elements - dir -->
+<h3>dir</h3>
+<p>The <code>dir</code> method is used to get or set the direction of an element's text.</p>
+
+<!-- Methods on elements - draggable -->
+<h3>draggable</h3>
+<p>The <code>draggable</code> method is used to get or set the drag state of an element.</p>
+
+<!-- Methods on elements - firstChild -->
+<h3>firstChild</h3>
+<p>The <code>firstChild</code> method returns the first child element.</p>
+
+<!-- Methods on elements - firstElChild -->
+<h3>firstElChild</h3>
+<p>The <code>firstElChild</code> method returns the first child element.</p>
+
+<!-- Methods on elements - hidden -->
+<h3>hidden</h3>
+<p>The <code>hidden</code> method is used to get or set the visibility state of an element.</p>
+
+<!-- Methods on elements - id -->
+<h3>id</h3>
+<p>The <code>id</code> method is used to get or set the unique identifier (ID) of an element.</p>
+
+<!-- Methods on elements - innerHTML -->
+<h3>innerHTML</h3>
+<p>The <code>innerHTML</code> method is used to get or set the content of an element as HTML markup.</p>
+
+<!-- Methods on elements - isContentEditable -->
+<h3>isContentEditable</h3>
+<p>The <code>isContentEditable</code> method returns the editing state of the element's content.</p>
+
+<!-- Methods on elements - lang -->
+<h3>lang</h3>
+<p>The <code>lang</code> method is used to get or set the language code of an element.</p>
+
+<!-- Methods on elements - lastChild -->
+<h3>lastChild</h3>
+<p>The <code>lastChild</code> method returns the last child element.</p>
+
+<!-- Methods on elements - lastElChild -->
+<h3>lastElChild</h3>
+<p>The <code>lastElChild</code> method returns the element's last child.</p>
+
+<!-- Methods on elements - localName -->
+<h3>localName</h3>
+<p>The <code>localName</code> method returns the local name of the element.</p>
+<!-- Methods on elements - namespaceURI -->
+<h3>namespaceURI</h3>
+<p>The <code>namespaceURI</code> method returns the element's namespace.</p>
+
+<!-- Methods on elements - nextElSibl -->
+<h3>nextElSibl</h3>
+<p>The <code>nextElSibl</code> method returns the next element adjacent to the current element.</p>
+
+<!-- Methods on elements - nextSibl -->
+<h3>nextSibl</h3>
+<p>The <code>nextSibl</code> method returns the next neighbor for the current element.</p>
+
+<!-- Methods on elements - nodeName -->
+<h3>nodeName</h3>
+<p>The <code>nodeName</code> method returns the name of the element node.</p>
+
+<!-- Methods on elements - nodeType -->
+<h3>nodeType</h3>
+<p>The <code>nodeType</code> method returns the element node type.</p>
+
+<!-- Methods on elements - nodeValue -->
+<h3>nodeValue</h3>
+<p>The <code>nodeValue</code> method is used to get or set the value of an element's node.</p>
+
+<!-- Methods on elements - offsetHeight -->
+<h3>offsetHeight</h3>
+<p>The <code>offsetHeight</code> method returns the full height of the element's contents, including scrolling.</p>
+
+<!-- Methods on elements - offsetLeft -->
+<h3>offsetLeft</h3>
+<p>The <code>offsetLeft</code> method returns the horizontal offset of an element relative to its parent element.</p>
+
+<!-- Methods on elements - offsetParent -->
+<h3>offsetParent</h3>
+<p>The <code>offsetParent</code> method returns the parent element that has the <code>position</code> property set.</p>
+
+<!-- Methods on elements - offsetTop -->
+<h3>offsetTop</h3>
+<p>The <code>offsetTop</code> method returns the vertical offset of an element relative to its parent element.</p>
+
+<!-- Methods on elements - offsetWidth -->
+<h3>offsetWidth</h3>
+<p>The <code>offsetWidth</code> method returns the full width of the element's contents, including scrolling.</p>
+
+<!-- Methods on elements - outerHTML -->
+<h3>outerHTML</h3>
+<p>The <code>outerHTML</code> method is used to get or set the outer HTML element.</p>
+
+<!-- Methods on elements - outerText -->
+<h3>outerText</h3>
+<p>The <code>outerText</code> method is used to get or set the outer text of an element.</p>
+<!-- Methods on elements - ownZone -->
+<h3>ownZone</h3>
+<p>The <code>ownZone</code> method returns a Document object representing the document containing the element.</p>
+
+<!-- Methods on elements - pwnZone -->
+<h3>pwnZone</h3>
+<p>The <code>pwnZone</code> method returns a Document object representing the document containing the element.</p>
+
+<!-- Methods on elements - parentEl -->
+<h3>parentEl</h3>
+<p>The <code>parentEl</code> method returns the parent element of the current element.</p>
+
+<!-- Methods on elements - parentNode -->
+<h3>parentNode</h3>
+<p>The <code>parentNode</code> method returns the parent node of the current element.</p>
+
+<!-- Methods on elements - prefix -->
+<h3>prefix</h3>
+<p>The <code>prefix</code> method returns the XML element prefix.</p>
+
+<!-- Methods on elements - previousElSibl -->
+<h3>previousElSibl</h3>
+<p>The <code>previousElSibl</code> method returns the previous element adjacent to the current element.</p>
+
+<!-- Methods on elements - previousSibl -->
+<h3>previousSibl</h3>
+<p>The <code>previousSibl</code> method returns the previous neighbor for the current element.</p>
+
+<!-- Methods on elements - scrollHeight -->
+<h3>scrollHeight</h3>
+<p>The <code>scrollHeight</code> method returns the full height of the element, taking into account scrolling.</p>
+
+<!-- Methods on elements - scrollLeft -->
+<h3>scrollLeft</h3>
+<p>The <code>scrollLeft</code> method is used to get or set the horizontal scroll value of an element.</p>
+
+<!-- Methods on elements - scrollTop -->
+<h3>scrollTop</h3>
+<p>The <code>scrollTop</code> method is used to get or set the vertical scroll value of an element.</p>
+
+<!-- Methods on elements - scrollWidth -->
+<h3>scrollWidth</h3>
+<p>The <code>scrollWidth</code> method returns the full width of the element, taking into account scrolling.</p>
+
+<!-- Methods on elements - style -->
+<h3>style</h3>
+<p>The <code>style</code> method returns a CSSStyleDeclaration object representing the styles of the element.</p>
+
+<!-- Methods on elements - tabIndex -->
+<h3>tabIndex</h3>
+<p>The <code>tabIndex</code> method is used to get or set the focus order of an element when navigating with the keyboard.</p>
+
+<!-- Methods on elements - tagName -->
+<h3>tagName</h3>
+<p>The <code>tagName</code> method returns the name of the element's tag in uppercase.</p>
+
+<!-- Methods on elements - textContent -->
+<h3>textContent</h3>
+<p>The <code>textContent</code> method is used to get or set the text content of an element.</p>
+
+<!-- Methods on elements - title -->
+<h3>title</h3>
+<p>The <code>title</code> method is used to get or set the element's tooltip.</p>
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="site-base">
+        <div class="container">
+            <ul class="footer-links navigation menu do-not-print" role="tree">
+                <li class="tier-1 element-1"><a href="mailto:mtv129jo@gmail.com">Help &amp; <span class="say-no-more">General</span> Contact</a></li>
+                <li class="tier-1 element-2"><a href="https://www.patreon.com/user?u=70884548">Patreon <span class="say-no-more"></span></a></li>
+                <li class="tier-1 element-3"><a href="https://github.com/python/pythondotorg/issues">Submit Website Bug</a></li>
+                <li class="tier-1 element-4">
+                    <a href="https://status.python.org/" title="Service Under Maintenance">Service Information<span class="python-status-indicator-maintenance" id="python-status-indicator"></span></a>
+                </li>
+            </ul>
+
+            <div class="copyright">
+                <div class="footer-content">
+                <p><small>
+                        <span class="pre">Copyright ©2022-2023.</span>
+                        &nbsp;<span class="pre"><a href="https://www.python.org/psf-landing/">LPL Software Foundation</a></span>
+
+                        &nbsp;<span class="pre"><a href="https://www.python.org/privacy/">Privacy Policy</a></span>
+                        <!--&nbsp;<span class="pre"><a href="/psf/community-infrastructure">Powered by PSF Community Infrastructure</a></span>-->
+                    </small></p>
+                </div>
+            </div>
+
+        </div><!-- end .container -->
+    </div><!-- end .site-base -->
+</footer>
+</body>
+
+</html>
