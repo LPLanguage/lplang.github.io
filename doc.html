@@ -33,6 +33,7 @@
 <ul>
 <li><a href="#lpl-1-functions">LPL 1.0 functions</a></li>
 <li><a href="#lpl-2-functions">LPL 2.0 functions</a></li>
+<li><a href="#lpl-3-functions">LPL 3.0 functions</a></li>
 </ul>
 </nav>
 
@@ -275,7 +276,6 @@ person1.introduce(); // Outputs: Hi, my name is Alex and I'm 25 years old.
 <!-- Methods on elements - classList -->
 <h3>classList</h3>
 <p>The <code>classList</code> method returns a DOMTokenList object representing the classes of the element.</p>
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <!-- Methods on elements - className -->
 <h3>className</h3>
@@ -468,6 +468,106 @@ person1.introduce(); // Outputs: Hi, my name is Alex and I'm 25 years old.
 <p>The <code>title</code> method is used to get or set the element's tooltip.</p>
 </section>
 
+<section id="lpl-3-0-functions">
+    <h1>LPL 3.0 Documentation</h1>
+
+    <!-- print function -->
+    <h2>print(text)</h2>
+    <p>The <code>print()</code> function is used to print text to the console.</p>
+
+    <!-- Example of using print -->
+    <h3>Example:</h3>
+    <pre><code>print("Hello, Server!");</code></pre>
+    <p>This code will output the text "Hello, Server!" to the console.</p>
+
+    <!-- print text function -->
+    <h2>print</h2>
+    <p>The <code>print</code> statement is also used to print text to the console. It's an alternative syntax for <code>print()</code>.</p>
+
+    <!-- Example of using print text -->
+    <h3>Example:</h3>
+    <pre><code>print "Hello, World!";</code></pre>
+    <p>This code will also output the text "Hello, World!" to the console.</p>
+
+    <!-- Variable declaration -->
+    <h2>$a</h2>
+    <p>The <code>$a</code> variable is used to declare and store values. It can hold various data types, including strings, numbers, and more.</p>
+
+    <!-- Constant declaration -->
+    <h2>const(name, value)</h2>
+    <p>The <code>const()</code> function is used to create constants. Constants are values that cannot be changed once defined.</p>
+
+    <!-- Example of using const -->
+    <h3>Example:</h3>
+    <pre><code>const(name, value);;</code></pre>
+    <p>In this example, we define a constant named <code>PI</code> with the value of 3.14159.</p>
+
+    <!-- Conditional statements -->
+    <h2>if/else</h2>
+    <p>The <code>if/else</code> statement is used for conditional execution of code. It allows you to perform different actions based on whether a specified condition is true or false.</p>
+
+    <!-- Looping statements -->
+    <h2>for</h2>
+    <p>The <code>for</code> statement is used for looping through a block of code a specified number of times.</p>
+
+    <!-- Example of using for loop -->
+    <h3>Example:</h3>
+    <pre><code>for ($i = 0; $i < 5; $i++) {
+print("Iteration: " . $i);
+}</code></pre>
+    <p>This code will iterate five times and print the current iteration number.</p>
+
+    <h2>while</h2>
+    <p>The <code>while</code> statement is used for looping through a block of code as long as a specified condition is true.</p>
+
+    <h2>do while</h2>
+    <p>The <code>do while</code> statement is used for looping through a block of code at least once, and then repeating the loop as long as a specified condition is true.</p>
+
+    <!-- Random number generation -->
+    <h2>random(min, max)</h2>
+    <p>The <code>random()</code> function is used to generate a random number within the specified range (inclusive).</p>
+
+    <!-- Function declaration -->
+    <h2>func()</h2>
+    <p>The <code>func()</code> statement is used to declare a function. Functions are blocks of code that can be called and executed later in the program.</p>
+
+    <!-- Translation -->
+    <h2>translate()</h2>
+    <p>The <code>translate()</code> function is used to translate LPL code into PHP. It facilitates interoperability between LPL and PHP.</p>
+
+    <!-- Class declaration -->
+    <h2>class</h2>
+    <p>The <code>class</code> keyword is used to declare a class in LPL. Classes are used to create objects and define their behavior through methods and properties.</p>
+
+    <!-- Example of using class -->
+    <h3>Example:</h3>
+    <pre><code>class MyClass {
+public $property;
+public function method1() {
+    // code
+}
+private function method2() {
+    // code
+}
+}</code></pre>
+    <p>In this example, we declare a class named <code>MyClass</code> with public and private methods and properties.</p>
+
+    <!-- Object instantiation -->
+    <h2>obj = new class()</h2>
+    <p>The <code>obj = new class()</code> statement is used to create an instance of a class. It allows you to work with objects based on the defined class.</p>
+
+    <!-- Interface declaration -->
+    <h2>intrf</h2>
+    <p>The <code>intrf</code> keyword is used to declare an interface in LPL. Interfaces define a contract for classes to implement specific methods.</p>
+
+    <!-- Abstract class declaration -->
+    <h2>abst</h2>
+    <p>The <code>abst</code> keyword is used to declare an abstract class in LPL. Abstract classes provide a blueprint for other classes and can contain abstract methods that must be implemented by derived classes.</p>
+
+    <!-- Implementation of interfaces -->
+    <h2>impl</h2>
+    <p>The <code>impl</code> keyword is used to indicate that a class implements one or more interfaces. It ensures that the class implements all the required methods defined by the interfaces.</p>
+</section>
 </main>
 
 

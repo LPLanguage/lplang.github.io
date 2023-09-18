@@ -42,30 +42,51 @@
                 <li><a href="modules\LPL 1.0 module.js" download>Download LPL 1.0 Module</a></li>
                 <li><a href="modules\LPL 1.1 module.js" download>Download LPL 1.1 Module</a></li>
                 <li><a href="modules\LPL 2.0 module.js" download>Download LPL 2.0 Module</a></li>
+                <li><a href="modules\LPL 3.0(demo) module.js" download>Download LPL 3.0 Module(demo)</a></li>
             </ul>
         
-            <h3>2. Include the Module in Your HTML</h3>
+            <h3>2. Include the Module in Your HTML(js)</h3>
             <p>Once you've downloaded the module, include it in your HTML file by adding the following script tag to the head section of your HTML:</p>
             
             <pre><code>&lt;script src="path/to/selected-lpl-module.js"&gt;&lt;/script&gt;</code></pre>
         
-            <h3>3. Start Writing LPL Code</h3>
+            <h3>3. Start Writing LPL Code(js)</h3>
             <p>You can now start writing LPL code within your HTML by using the <code>&lt;lpl&gt;</code> tags. For LPL 1.0, you can use the <code>var code = ``;</code> variable located in the LPL 1.0 module.js file.</p>
         
             <h2>Example</h2>
-            <pre><code>&lt;html&gt;
-                &lt;head&gt;
-                    &lt;script src="path/to/selected-lpl-module.js"&gt;&lt;/script&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt;My LPL Page&lt;/h1&gt;
-                    &lt;lpl&gt;
-                        print("Hello, LPL!");
-                    &lt;/lpl&gt;
-                &lt;/body&gt;
-            &lt;/html&gt;</code></pre>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="path/to/selected-lpl-module.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My LPL Page&lt;/h1&gt;
+        &lt;lpl&gt;
+            print("Hello, LPL!");
+        &lt;/lpl&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h3>2. Include the Module in Your HTML(php)</h3>
+            <p>include it in your project and add it for further use</p>
+            
+            <pre><code>include 'LPL 3.0 module.php';</code></pre>
         
-            <p>Now you're ready to use the LPL language in your projects. Happy coding!</p>
+            <h3>3. make a new LPL file (file.lpl)&lt;lpl&gt;&lt;/lpl&gt; tag</h3>
+            <p>you need to create a new .lpl file in which you will write the code, you can use HTML code in it and write in the LPL itself in &lt;lpl&gt;&lt;/lpl&gt;</p>
+        
+            <h3>4. connect LPL file<lpl></lpl> tag</h3>
+            <p>then enter LPL 3.0 module.php and write the path to the file in the array and you can start coding in .lpl files</p>
+            <h2>Example</h2>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="path/to/selected-lpl-module.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;My LPL Page&lt;/h1&gt;
+        &lt;lpl&gt;
+            print("Hello, LPL!");
+        &lt;/lpl&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
         </main>
         
     
