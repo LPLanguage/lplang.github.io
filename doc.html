@@ -210,23 +210,363 @@ main(hi server);
 <h2>zone.RemEvList(element, eventName, handler)</h2>
 <p>The <code>zone.RemEvList()</code> method removes an event handler from an element.</p>
 
+<!-- adoptNode(node) function -->
+<h2>adoptNode(node)</h2>
+<p>The <code>adoptNode(node)</code> function is used to clone a node and attach it to the current document. It allows you to take an existing DOM node, such as an element or attribute, and make it part of the current document's DOM tree.</p>
+
+<!-- Example of using adoptNode -->
+<h3>Example:</h3>
+<pre><code>var newNode = adoptNode(existingNode);</code></pre>
+<p>In this example, the <code>adoptNode</code> function is used to clone the <code>existingNode</code> and return a new node, <code>newNode</code>, which can then be inserted into the current document's DOM tree.</p>
+
+<!-- captEv() function -->
+<h2>captEv()</h2>
+<p>The <code>captEv()</code> function is used to capture events on the document. It enables the document to capture all events, including those that occur on its descendants. This can be useful for intercepting events at a higher level in the DOM hierarchy.</p>
+
+<!-- Example of using captEv -->
+<h3>Example:</h3>
+<pre><code>captEv();</code></pre>
+<p>This code enables event capturing on the document, allowing you to capture events as they propagate down the DOM tree.</p>
+
+<!-- clear() function -->
+<h2>clear()</h2>
+<p>The <code>clear()</code> function is used to clear the content of the document. It removes all child nodes and content from the document, effectively resetting it to an empty state.</p>
+
+<!-- Example of using clear -->
+<h3>Example:</h3>
+<pre><code>clear();</code></pre>
+<p>This code clears the entire content of the document.</p>
+
+<!-- close() function -->
+<h2>close()</h2>
+<p>The <code>close()</code> function is used to close the document for writing. After calling this function, you cannot write or modify the document further. It's typically used in conjunction with the <code>open()</code> function.</p>
+
+<!-- Example of using close -->
+<h3>Example:</h3>
+<pre><code>close();</code></pre>
+<p>This code closes the document, preventing any further content from being added.</p>
+
+<!-- crtAttr(name) function -->
+<h2>crtAttr(name)</h2>
+<p>The <code>crtAttr(name)</code> function is used to create a new attribute node with the specified name. This attribute node can then be attached to an element or other nodes in the document.</p>
+
+<!-- Example of using crtAttr -->
+<h3>Example:</h3>
+<pre><code>var newAttribute = crtAttr("data-custom");</code></pre>
+<p>In this example, the <code>crtAttr</code> function creates a new attribute node with the name "data-custom," which can be added to an element later.</p>
+
+<!-- creAttrNS(namespaceURI, qualifiedName) function -->
+<h2>creAttrNS(namespaceURI, qualifiedName)</h2>
+<p>The <code>creAttrNS(namespaceURI, qualifiedName)</code> function is used to create a new attribute node with the specified namespace URI and qualified name. This function is typically used for creating attributes in XML documents with namespaces.</p>
+
+<!-- Example of using creAttrNS -->
+<h3>Example:</h3>
+<pre><code>var newAttribute = creAttrNS("http://example.com/ns", "custom:attribute");</code></pre>
+<p>In this example, the <code>creAttrNS</code> function creates a new attribute node with the specified namespace URI and qualified name.</p>
+
+<!-- crtCDATASect(data) function -->
+<h2>crtCDATASect(data)</h2>
+<p>The <code>crtCDATASect(data)</code> function is used to create a new CDATA section node with the specified data. CDATA sections are used to include text that should not be parsed as XML or HTML markup.</p>
+
+<!-- Example of using crtCDATASect -->
+<h3>Example:</h3>
+<pre><code>var cdataSection = crtCDATASect("This is a CDATA section.");</code></pre>
+<p>This code creates a new CDATA section node with the provided data.</p>
+
+<!-- crtComm(data) function -->
+<h2>crtComm(data)</h2>
+<p>The <code>crtComm(data)</code> function is used to create a new comment node with the specified data. Comment nodes are used to include comments in the document source code.</p>
+
+<!-- Example of using crtComm -->
+<h3>Example:</h3>
+<pre><code>var commentNode = crtComm("This is a comment.");</code></pre>
+<p>This code creates a new comment node with the provided data.</p>
+
+<!-- crtZoneFrag() function -->
+<h2>crtZoneFrag()</h2>
+<p>The <code>crtZoneFrag()</code> function is used to create a new document fragment node. Document fragments are lightweight containers that can hold multiple nodes. They are often used for efficient DOM manipulation.</p>
+
+<!-- Example of using crtZoneFrag -->
+<h3>Example:</h3>
+<pre><code>var fragment = crtZoneFrag();</code></pre>
+<p>This code creates a new document fragment that can be used to hold and manipulate multiple nodes.</p>
+
+<!-- crtEl(tagName) function -->
+<h2>crtEl(tagName)</h2>
+<p>The <code>crtEl(tagName)</code> function is used to create a new element node with the specified tag name. This element node can then be added to the document or other nodes.</p>
+
+<!-- Example of using crtEl -->
+<h3>Example:</h3>
+<pre><code>var newElement = crtEl("div");</code></pre>
+<p>In this example, the <code>crtEl</code> function creates a new <code>div</code> element.</p>
+
+<!-- crtElNS(namespaceURI, qualifiedName) function -->
+<h2>crtElNS(namespaceURI, qualifiedName)</h2>
+<p>The <code>crtElNS(namespaceURI, qualifiedName)</code> function is used to create a new element node with the specified namespace URI and qualified name. This function is typically used for creating elements in XML documents with namespaces.</p>
+
+<!-- Example of using crtElNS -->
+<h3>Example:</h3>
+<pre><code>var newElement = crtElNS("http://example.com/ns", "custom:element");</code></pre>
+<p>In this example, the <code>crtElNS</code> function creates a new element node with the specified namespace URI and qualified name.</p>
+
+<!-- crtEv(type) function -->
+<h2>crtEv(type)</h2>
+<p>The <code>crtEv(type)</code> function is used to create a new event object of the specified type. Event objects can be used to trigger and handle events in the DOM.</p>
+
+<!-- Example of using crtEv -->
+<h3>Example:</h3>
+<pre><code>var customEvent = crtEv("custom");</code></pre>
+<p>This code creates a new custom event object with the specified type.</p>
+
+<!-- crtExpr(expression, resolver) function -->
+<h2>crtExpr(expression, resolver)</h2>
+<p>The <code>crtExpr(expression, resolver)</code> function is used to create a new XPath expression object with the specified expression and resolver. XPath expressions are used for querying XML documents.</p>
+
+<!-- Example of using crtExpr -->
+<h3>Example:</h3>
+<pre><code>var xpathExpression = crtExpr("//book[@lang='en']", myResolver);</code></pre>
+<p>In this example, the <code>crtExpr</code> function creates a new XPath expression object with the specified expression and resolver.</p>
+
+<!-- crteNSRes(nodeResolver) function -->
+<h2>crteNSRes(nodeResolver)</h2>
+<p>The <code>crteNSRes(nodeResolver)</code> function is used to create a new namespace resolver object based on the provided node resolver. Namespace resolvers are used in XPath queries to resolve namespace prefixes.</p>
+
+<!-- Example of using crteNSRes -->
+<h3>Example:</h3>
+<pre><code>var nsResolver = crteNSRes(myNodeResolver);</code></pre>
+<p>This code creates a new namespace resolver object based on the provided node resolver.</p>
+
+<!-- crtNodeIter(root, whatToShow, filter) function -->
+<h2>crtNodeIter(root, whatToShow, filter)</h2>
+<p>The <code>crtNodeIter(root, whatToShow, filter)</code> function is used to create a new node iterator object with the specified root, whatToShow, and filter. Node iterators are used for traversing the DOM tree and selecting nodes that match certain criteria.</p>
+
+<!-- Example of using crtNodeIter -->
+<h3>Example:</h3>
+<pre><code>var nodeIterator = crtNodeIter(document.body, NodeFilter.SHOW_ELEMENT, myFilter);</code></pre>
+<p>This code creates a new node iterator for the document's body, showing only element nodes that match the provided filter.</p>
+
+<!-- crtProcInstruction(target, data) function -->
+<h2>crtProcInstruction(target, data)</h2>
+<p>The <code>crtProcInstruction(target, data)</code> function is used to create a new processing instruction node with the specified target and data. Processing instruction nodes are often used in XML documents for providing instructions to applications.</p>
+
+<!-- Example of using crtProcInstruction -->
+<h3>Example:</h3>
+<pre><code>var piNode = crtProcInstruction("xml-stylesheet", "href='style.css' type='text/css'");</code></pre>
+<p>This code creates a new processing instruction node with the specified target and data.</p>
+
+<!-- crtRange() function -->
+<h2>crtRange()</h2>
+<p>The <code>crtRange()</code> function is used to create a new range object. Range objects are used for selecting and manipulating a portion of the document's content, such as a text range or a range of elements.</p>
+
+<!-- Example of using crtRange -->
+<h3>Example:</h3>
+<pre><code>var textRange = crtRange();</code></pre>
+<p>This code creates a new range object that can be used for text selection and manipulation.</p>
+
+<!-- crtTextNode(data) function -->
+<h2>crtTextNode(data)</h2>
+<p>The <code>crtTextNode(data)</code> function is used to create a new text node with the specified data. Text nodes are used to represent textual content within an element.</p>
+
+<!-- Example of using crtTextNode -->
+<h3>Example:</h3>
+<pre><code>var textNode = crtTextNode("This is a text node.");</code></pre>
+<p>This code creates a new text node with the provided text data.</p>
+
+<!-- crtTreeWalk(root, whatToShow, filter) function -->
+<h2>crtTreeWalk(root, whatToShow, filter)</h2>
+<p>The <code>crtTreeWalk(root, whatToShow, filter)</code> function is used to create a new tree walker object with the specified root, whatToShow, and filter. Tree walkers are used for traversing the DOM tree and selecting nodes that match certain criteria.</p>
+
+<!-- Example of using crtTreeWalk -->
+<h3>Example:</h3>
+<pre><code>var treeWalker = crtTreeWalk(document.body, NodeFilter.SHOW_ELEMENT, myFilter);</code></pre>
+<p>This code creates a new tree walker for the document's body, showing only element nodes that match the provided filter.</p>
+
+<!-- execCommand(command, showUI, value) function -->
+<h2>execCommand(command, showUI, value)</h2>
+<p>The <code>execCommand(command, showUI, value)</code> function is used to execute a browser command on the document. This function can be used to perform various actions, such as formatting text or manipulating the clipboard.</p>
+
+<!-- Example of using execCommand -->
+<h3>Example:</h3>
+<pre><code>execCommand("bold", false, null);</code></pre>
+<p>This code executes the "bold" command, which makes the selected text bold if supported by the browser.</p>
+
+<!-- getEById(id) function -->
+<h2>getEById(id)</h2>
+<p>The <code>getEById(id)</code> function is used to retrieve an element from the document by its unique ID. This function is a convenient way to access specific elements in the DOM.</p>
+
+<!-- Example of using getEById -->
+<h3>Example:</h3>
+<pre><code>var element = getEById("myElement");</code></pre>
+<p>This code retrieves an element with the ID "myElement" from the document.</p>
+
+<!-- getElByClassName(classNames) function -->
+<h2>getElByClassName(classNames)</h2>
+<p>The <code>getElByClassName(classNames)</code> function is used to retrieve elements from the document that have the specified class names. It returns a collection of elements that match the given class names.</p>
+
+<!-- Example of using getElByClassName -->
+<h3>Example:</h3>
+<pre><code>var elements = getElByClassName("myClass");</code></pre>
+<p>This code retrieves all elements with the class name "myClass" from the document.</p>
+
+<!-- getElByTagName(tagName) function -->
+<h2>getElByTagName(tagName)</h2>
+<p>The <code>getElByTagName(tagName)</code> function is used to retrieve elements from the document that have the specified tag name. It returns a collection of elements that match the given tag name.</p>
+
+<!-- Example of using getElByTagName -->
+<h3>Example:</h3>
+<pre><code>var elements = getElByTagName("div");</code></pre>
+<p>This code retrieves all <code>div</code> elements from the document.</p>
+
+<!-- getElByTagNameNS(namespaceURI, localName) function -->
+<h2>getElByTagNameNS(namespaceURI, localName)</h2>
+<p>The <code>getElByTagNameNS(namespaceURI, localName)</code> function is used to retrieve elements from the document that have the specified namespace URI and local name. It returns a collection of elements that match the given criteria.</p>
+
+<!-- Example of using getElByTagNameNS -->
+<h3>Example:</h3>
+<pre><code>var elements = getElByTagNameNS("http://example.com/ns", "custom:element");</code></pre>
+<p>This code retrieves elements with the specified namespace URI and local name from the document.</p>
+
+<!-- hasFocus() function -->
+<h2>hasFocus()</h2>
+<p>The <code>hasFocus()</code> function is used to check if the document currently has focus. It returns a boolean value indicating whether the document is in focus.</p>
+
+<!-- Example of using hasFocus -->
+<h3>Example:</h3>
+<pre><code>var isFocused = hasFocus();</code></pre>
+<p>This code checks whether the document currently has focus and stores the result in the <code>isFocused</code> variable.</p>
+
+<!-- importNode(node, deep) function -->
+<h2>importNode(node, deep)</h2>
+<p>The <code>importNode(node, deep)</code> function is used to import a node from another document or owner document into the current document. It creates a new copy of the node that can be used in the current document's DOM tree.</p>
+
+<!-- Example of using importNode -->
+<h3>Example:</h3>
+<pre><code>var importedNode = importNode(externalNode, true);</code></pre>
+<p>This code imports the <code>externalNode</code> into the current document, creating a new copy with all its child nodes (deep import).</p>
+
+<!-- load(url) function -->
+<h2>load(url)</h2>
+<p>The <code>load(url)</code> function is used to load a new document from the specified URL. It replaces the current document with the contents of the URL.</p>
+
+<!-- Example of using load -->
+<h3>Example:</h3>
+<pre><code>load("https://example.com/new-document.html");</code></pre>
+<p>This code loads a new document from the specified URL and replaces the current document with its contents.</p>
+
+<!-- open() function -->
+<h2>open()</h2>
+<p>The <code>open()</code> function is used to open a new HTML document for writing. After calling this function, you can start writing or appending content to the document using other functions.</p>
+
+<!-- Example of using open -->
+<h3>Example:</h3>
+<pre><code>open();</code></pre>
+<p>This code opens a new HTML document for writing.</p>
+
+<!-- qrCommEnabled(command) function -->
+<h2>qrCommEnabled(command)</h2>
+<p>The <code>qrCommEnabled(command)</code> function is used to check if a browser command is enabled or supported by the document. It returns a boolean value indicating whether the command is enabled.</p>
+
+<!-- Example of using qrCommEnabled -->
+<h3>Example:</h3>
+<pre><code>var isEnabled = qrCommEnabled("cut");</code></pre>
+<p>This code checks whether the "cut" command is enabled or supported by the document.</p>
+
+<!-- qrCommandInd(command) function -->
+<h2>qrCommandInd(command)</h2>
+<p>The <code>qrCommandInd(command)</code> function is used to check if a browser command is in an indeterminate state. Some commands may have an indeterminate state, which means they are neither enabled nor disabled. It returns a boolean value indicating whether the command is in an indeterminate state.</p>
+
+<!-- Example of using qrCommandInd -->
+<h3>Example:</h3>
+<pre><code>var isIndeterminate = qrCommandInd("copy");</code></pre>
+<p>This code checks whether the "copy" command is in an indeterminate state.</p>
+
+<!-- qrCommandState(command) function -->
+<h2>qrCommandState(command)</h2>
+<p>The <code>qrCommandState(command)</code> function is used to check the state of a browser command. It returns a boolean value indicating whether the command is in an enabled or disabled state.</p>
+
+<!-- Example of using qrCommandState -->
+<h3>Example:</h3>
+<pre><code>var isCommandEnabled = qrCommandState("paste");</code></pre>
+<p>This code checks whether the "paste" command is enabled or disabled.</p>
+
+<!-- qrCommandSupp(command) function -->
+<h2>qrCommandSupp(command)</h2>
+<p>The <code>qrCommandSupp(command)</code> function is used to check if a browser command is supported by the document. It returns a boolean value indicating whether the command is supported.</p>
+
+<!-- Example of using qrCommandSupp -->
+<h3>Example:</h3>
+<pre><code>var isSupported = qrCommandSupp("undo");</code></pre>
+<p>This code checks whether the "undo" command is supported by the document.</p>
+
+<!-- qrCommandValue(command) function -->
+<h2>qrCommandValue(command)</h2>
+<p>The <code>qrCommandValue(command)</code> function is used to get the current value of a browser command. Some commands may have values associated with them, such as text formatting commands. It returns the current value of the command.</p>
+
+<!-- Example of using qrCommandValue -->
+<h3>Example:</h3>
+<pre><code>var commandValue = qrCommandValue("fontname");</code></pre>
+<p>This code retrieves the current font name value associated with the "fontname" command.</p>
+
+<!-- qrSelect(selectors) function -->
+<h2>qrSelect(selectors)</h2>
+<p>The <code>qrSelect(selectors)</code> function is used to select the first element in the document that matches the specified CSS selectors. It returns the selected element.</p>
+
+<!-- Example of using qrSelect -->
+<h3>Example:</h3>
+<pre><code>var selectedElement = qrSelect(".my-class");</code></pre>
+<p>This code selects the first element with the class "my-class" using CSS selectors.</p>
+
+<!-- qrSelectAll(selectors) function -->
+<h2>qrSelectAll(selectors)</h2>
+<p>The <code>qrSelectAll(selectors)</code> function is used to select all elements in the document that match the specified CSS selectors. It returns a collection of selected elements.</p>
+
+<!-- Example of using qrSelectAll -->
+<h3>Example:</h3>
+<pre><code>var selectedElements = qrSelectAll(".my-class");</code></pre>
+<p>This code selects all elements with the class "my-class" using CSS selectors.</p>
+
+<!-- releaseEv() function -->
+<h2>releaseEv()</h2>
+<p>The <code>releaseEv()</code> function is used to release all captured events on the document. It stops capturing events and allows them to propagate normally through the DOM tree.</p>
+
+<!-- Example of using releaseEv -->
+<h3>Example:</h3>
+<pre><code>releaseEv();</code></pre>
+<p>This code releases all captured events on the document.</p>
+
+<!-- write(args) function -->
+<h2>write(args)</h2>
+<p>The <code>write(args)</code> function is used to write text or HTML content to the document. It appends the specified content to the current document.</p>
+
+<!-- Example of using write -->
+<h3>Example:</h3>
+<pre><code>write("This is some dynamic content.");</code></pre>
+<p>This code writes the specified text to the document.</p>
+
+<!-- writeln(args) function -->
+<h2>writeln(args)</h2>
+<p>The <code>writeln(args)</code> function is used to write text or HTML content to the document followed by a newline character. It appends the content and a newline to the current document.</p>
+
+<!-- Example of using writeln -->
+<h3>Example:</h3>
+<pre><code>writeln("This is a new line of content.");</code></pre>
+<p>This code writes the specified text to the document followed by a newline.</p>
+
 <h2>Creating classes</h2>
 <p>In LPL 2.0, you can create your own classes to organize code and work with objects.</p>
 <p>To create a class, use the keyword <code>class</code> followed by the name of your class. Next, define a class constructor that will be called when a new object of this class is created. In the constructor you can initialize the properties of the object.</p>
 <p>Example:</p>
-<pre><code class="code">class Person {
-constructor(name, age) {
-this.name = name;
-this.age = age;
-}
+<pre><code class="code">class a{
+    //parametr(var)
+    param(){ 
+        this.names = "yes";
+    }
+    //function
+    printName(){ 
+        print(this.names);
+    }
 
-introduce() {
-print("Hi, my name is " + this.name + " and I'm " + this.age + " years old.");
 }
-}
-
-var person1 = new Person("Alex", 25);
-person1.introduce(); // Outputs: Hi, my name is Alex and I'm 25 years old.
 </code></pre>
 <p>In the example above, the <code>Person</code> class has a constructor that takes a name and age, and a <code>introduce()</code> method that outputs information about the person.</p>
 <!-- Methods on elements -->
